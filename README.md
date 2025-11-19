@@ -8,7 +8,7 @@ A modern, retro-styled calculator application built with .NET MAUI for Windows.
 - **Theme Switching**: Seamlessly toggle between Light and Dark modes with a dedicated button.
 - **Standard Operations**: Perform basic arithmetic operations (+, -, *, /) with ease.
 - **Advanced Features**: Includes bracket support `( )` for complex expressions.
-- **Responsive UI**: Designed to look great on Windows desktop.
+- **Responsive UI**: Designed to look great on Windows 10 and 11.
 
 ## Screenshots
 
