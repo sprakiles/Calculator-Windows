@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Page">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightPageBackgroundColor}, Dark={StaticResource DarkPageBackgroundColor}}" />
+    </Style>
+
+    <Style x:Key="DisplayLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightDisplayTextColor}, Dark={StaticResource DarkDisplayTextColor}}" />
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalTextAlignment" Value="End"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="SubDisplayLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightDisplayTextColor}, Dark={StaticResource DarkDisplayTextColor}}" />
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="HorizontalTextAlignment" Value="End"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CalculatorButton" TargetType="Button">
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="CornerRadius" Value="12"/>
+        <Setter Property="Margin" Value="4"/>
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal" />
+                    <VisualState x:Name="PointerOver">
+                        <VisualState.Setters>
+                            <Setter Property="Opacity" Value="0.8" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NumberButton" TargetType="Button" BasedOn="{StaticResource CalculatorButton}">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightButtonBackgroundColor}, Dark={StaticResource DarkButtonBackgroundColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightNumberButtonTextColor}, Dark={StaticResource DarkNumberButtonTextColor}}" />
+    </Style>
+
+    <Style x:Key="OperatorButton" TargetType="Button" BasedOn="{StaticResource CalculatorButton}">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightOperatorButtonBackgroundColor}, Dark={StaticResource DarkOperatorButtonBackgroundColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightOperatorButtonTextColor}, Dark={StaticResource DarkOperatorButtonTextColor}}" />
+    </Style>
+
+    <Style x:Key="OtherButton" TargetType="Button" BasedOn="{StaticResource CalculatorButton}">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightOtherButtonBackgroundColor}, Dark={StaticResource DarkOtherButtonBackgroundColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightOtherButtonTextColor}, Dark={StaticResource DarkOtherButtonTextColor}}" />
+    </Style>
+
+    <Style x:Key="EqualsButton" TargetType="Button" BasedOn="{StaticResource CalculatorButton}">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightEqualsButtonBackgroundColor}, Dark={StaticResource DarkEqualsButtonBackgroundColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightEqualsButtonTextColor}, Dark={StaticResource DarkEqualsButtonTextColor}}" />
+    </Style>
+
+</ResourceDictionary>

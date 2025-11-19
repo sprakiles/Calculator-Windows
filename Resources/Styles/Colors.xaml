@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Light Theme -->
+    <Color x:Key="LightPageBackgroundColor">#FEF7E2</Color>
+    <Color x:Key="LightDisplayTextColor">#3D3D3D</Color>
+    <Color x:Key="LightButtonBackgroundColor">#FCEFCF</Color>
+    <Color x:Key="LightNumberButtonTextColor">#3D3D3D</Color>
+    <Color x:Key="LightOperatorButtonBackgroundColor">#F6D096</Color>
+    <Color x:Key="LightOperatorButtonTextColor">#3D3D3D</Color>
+    <Color x:Key="LightOtherButtonBackgroundColor">#FCEFCF</Color>
+    <Color x:Key="LightOtherButtonTextColor">#3D3D3D</Color>
+    <Color x:Key="LightEqualsButtonBackgroundColor">#FBC02D</Color>
+    <Color x:Key="LightEqualsButtonTextColor">#3D3D3D</Color>
+
+    <!-- Dark Theme -->
+    <Color x:Key="DarkPageBackgroundColor">#1F2125</Color>
+    <Color x:Key="DarkDisplayTextColor">#FFFFFF</Color>
+    <Color x:Key="DarkButtonBackgroundColor">#2D2F33</Color>
+    <Color x:Key="DarkNumberButtonTextColor">#FFFFFF</Color>
+    <Color x:Key="DarkOperatorButtonBackgroundColor">#D89862</Color>
+    <Color x:Key="DarkOperatorButtonTextColor">#FFFFFF</Color>
+    <Color x:Key="DarkOtherButtonBackgroundColor">#3E4044</Color>
+    <Color x:Key="DarkOtherButtonTextColor">#FFFFFF</Color>
+    <Color x:Key="DarkEqualsButtonBackgroundColor">#FBC02D</Color>
+    <Color x:Key="DarkEqualsButtonTextColor">#3D3D3D</Color>
+
+</ResourceDictionary>
