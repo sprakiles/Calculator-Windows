@@ -19,7 +19,7 @@ A modern, retro-styled calculator application built with .NET MAUI for Windows.
 ### Prerequisites
 
 - .NET 8.0 SDK or later
-- Visual Studio 2022 (with .NET MAUI workload) + You can use vscode + maui workload for windows only
+- Visual Studio (with .NET MAUI workload) + You can use vscode + maui workload for windows only
 
 ### Installation
 
